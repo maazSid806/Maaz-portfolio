@@ -3,10 +3,13 @@
 
     .heading {
         text-align: center;
-        font-size: 6vw;
+        font-size: 30px;
         color: white;
         margin-bottom: 3rem;
         text-transform: uppercase;
+        @media (max-width: 576px) {
+            font-size: 25px;
+        }
         span {
             text-transform: uppercase;
             color: $crimson;
@@ -43,13 +46,12 @@
         .info-container {
             flex: 1 1 42rem;
             h1 {
-                font-size:2.5rem;
+                font-size: 2.5rem;
                 color: $white;
                 text-transform: uppercase;
                 padding-bottom: 1rem;
-                @media (max-width:576px) {
+                @media (max-width: 576px) {
                     font-size: 15px;
-                    
                 }
             }
             .box-container {
@@ -99,10 +101,13 @@
     padding: 7rem 9%;
     .heading {
         text-align: center;
-        font-size: 6vw;
+        font-size: 30px;
         color: white;
         margin-bottom: 3rem;
         text-transform: uppercase;
+        @media (max-width: 576px) {
+            font-size: 25px;
+        }
         span {
             text-transform: uppercase;
             color: $crimson;
@@ -139,10 +144,13 @@
     padding: 7rem 9%;
     .heading {
         text-align: center;
-        font-size: 6vw;
+        font-size: 30px;
         color: white;
         margin-bottom: 3rem;
         text-transform: uppercase;
+        @media (max-width: 576px) {
+            font-size: 25px;
+        }
         span {
             text-transform: uppercase;
             color: $crimson;
@@ -187,7 +195,7 @@
                 font-weight: normal;
                 padding-top: 3rem;
             }
-            p{
+            p {
                 font-size: 1.5rem;
                 color: $light-color;
                 line-height: 2;

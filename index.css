@@ -190,10 +190,15 @@ a:hover i {
 }
 .about-section .heading {
   text-align: center;
-  font-size: 6vw;
+  font-size: 30px;
   color: white;
   margin-bottom: 3rem;
   text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .about-section .heading {
+    font-size: 25px;
+  }
 }
 .about-section .heading span {
   text-transform: uppercase;
@@ -287,10 +292,15 @@ a:hover i {
 }
 .skills-section .heading {
   text-align: center;
-  font-size: 6vw;
+  font-size: 30px;
   color: white;
   margin-bottom: 3rem;
   text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .skills-section .heading {
+    font-size: 25px;
+  }
 }
 .skills-section .heading span {
   text-transform: uppercase;
@@ -330,10 +340,15 @@ a:hover i {
 }
 .education-section .heading {
   text-align: center;
-  font-size: 6vw;
+  font-size: 30px;
   color: white;
   margin-bottom: 3rem;
   text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .education-section .heading {
+    font-size: 25px;
+  }
 }
 .education-section .heading span {
   text-transform: uppercase;
