@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: none;
+    text-transform: capitalize;
+    font-family:Arial, Helvetica, sans-serif;
+}
+$white:#ffff;
+$crimson:crimson;
+$black: #0d0d0d;
+$light-bg:#1a1a1a;
+$light-color:#aaa;
+$box-shadow:0.5rem 1rem rgba(0,0,0,.7);
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr ));
+    gap: 1.5rem;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+
+    &::-webkit-scrollbar{
+     width: 1rem;
+    }
+    &::-webkit-scrollbar-track{
+        background: $black;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: $crimson;
+        border-radius: 5rem;
+    }
+    overflow-y: scroll;
+}
+body{
+    background: $black;
+    padding-bottom: 6.5rem;
+  
+}
+
+
+
+
+
+
+// media-quarry
+
+
+@media (max-width:1200px) {
+    html{
+        font-size: 55%;
+        overflow-y: scroll;
+    }
+    
+}
+
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+
+
+
+
+
+@import"./sass/nav-bar.scss";
+@import"./sass/home-section.scss";
+@import"./sass/about-section.scss";
+@import"./sass/portfolio-section.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+.home-section {
+    padding: 5rem 9%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    min-height: calc(100vh - 6.5rem);
+
+    @media (max-width: 1250px) {
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    .image {
+        flex: 1 1 42rem;
+        @media (max-width: 1250px) {
+         flex: none;
+        }
+        img {
+            height: 40rem;
+            width: 50rem;
+            border-radius: 360% 249% 653%/411% 44% 954% 198%;
+            @media (max-width: 1250px) {
+                height: 30rem;
+                width: 30rem;
+            }
+        }
+    }
+    .content {
+        flex: 1 1 42rem;
+        @media (max-width: 1250px) {
+            flex: none;
+         }
+        h3 {
+            color: $white;
+            font-size: 4rem;
+            padding-bottom: 0.5rem;
+            @media (max-width: 1250px) {
+               font-size: 3rem;
+            }
+        }
+        span {
+            font-size: 3rem;
+            color: $crimson;
+            padding: 0.5rem 0;
+            display: block;
+            @media (max-width: 1250px) {
+                font-size: 2.5rem;
+             }
+        }
+        p {
+            font-size: 1.5rem;
+            color: $light-color;
+            padding: 1rem 0;
+            line-height: 2;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 7rem;
+            background: $crimson;
+            color: $white;
+            font-size: 1.7rem;
+
+            i {
+                height: 4rem;
+                width: 4rem;
+                line-height: 4rem;
+                font-size: 1.7rem;
+                text-align: center;
+                background: $white;
+                color: $crimson;
+                border-radius: 50%;
+                transition: 0.2s linear;
+                &:hover {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
