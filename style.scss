@@ -34,7 +34,31 @@ $box-shadow:0.5rem 1rem rgba(0,0,0,.7);
         color: $crimson;
     }
 }
+.btn {
+    margin-top: 8px;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 7rem;
+    background: $crimson;
+    color: $white;
+    font-size: 1.3rem;
+    border: none;
 
+    i {
+        height: 3.5rem;
+        width: 3.5rem;
+        line-height: 4rem;
+        font-size: 1.3rem;
+        text-align: center;
+        background: $white;
+        color: $crimson;
+        border-radius: 50%;
+        transition: 0.2s linear;
+        &:hover {
+            margin-left: 2rem;
+        }
+    }
+}
 
 html{
     font-size: 62.5%;
@@ -94,6 +118,7 @@ body{
 @import"./sass/about-section.scss";
 @import"./sass/blog-section.scss";
 @import"./sass/portfolio-section.scss";
+@import"./sass/contact-section.scss";
 
 
 

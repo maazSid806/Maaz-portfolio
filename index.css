@@ -26,6 +26,31 @@
   color: crimson;
 }
 
+.btn {
+  margin-top: 8px;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 7rem;
+  background: crimson;
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+}
+.btn i {
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 4rem;
+  font-size: 1.3rem;
+  text-align: center;
+  background: white;
+  color: crimson;
+  border-radius: 50%;
+  transition: 0.2s linear;
+}
+.btn i:hover {
+  margin-left: 2rem;
+}
+
 html {
   font-size: 62.5%;
   overflow: hidden;
@@ -569,6 +594,106 @@ a:hover i {
 }
 .portfolio-section .box-container .box .content button:hover {
   color: white;
+}
+
+.contact-section {
+  padding: 5rem 9%;
+}
+.contact-section .row {
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.contact-section .row .info-container {
+  width: 40rem;
+}
+.contact-section .row .info-container h1 {
+  font-size: 3rem;
+  color: white;
+  padding: 1rem;
+}
+.contact-section .row .info-container p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 1rem 0;
+}
+.contact-section .row .info-container .box-container {
+  padding: 2rem 0;
+}
+.contact-section .row .info-container .box-container .box {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.contact-section .row .info-container .box-container .box i {
+  font-size: 3rem;
+  color: crimson;
+}
+.contact-section .row .info-container .box-container .box h3 {
+  font-size: 2rem;
+  color: white;
+}
+.contact-section .row .info-container .share button {
+  font-size: 2rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  background: #1a1a1a;
+  border: none;
+  color: white;
+  text-align: center;
+  margin-right: 0.3rem;
+}
+.contact-section .row .info-container .share button:hover {
+  background: crimson;
+}
+.contact-section .row form {
+  margin-bottom: 2rem;
+  flex: 1 1 42rem;
+}
+.contact-section .row form .input-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-section .row form .input-box input {
+  width: 49%;
+}
+.contact-section .row form .input-box input,
+.contact-section .row form textarea {
+  border-radius: 10px;
+  padding: 1.2rem 1.8rem;
+  font-size: 1.6rem;
+  color: white;
+  text-transform: none;
+  margin: 0.7rem 0;
+  background: #1a1a1a;
+  border: none;
+}
+@media (max-width: 576px) {
+  .contact-section .row form .input-box input,
+.contact-section .row form textarea {
+    width: 100%;
+  }
+}
+.contact-section .row form textarea {
+  width: 100%;
+  border-radius: 1rem;
+  resize: none;
+  height: 25rem;
+}
+.contact-section .row form .btn {
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+.contact-section .row form .btn:hover {
+  background: white;
+  color: #0d0d0d;
 }
 
 /*# sourceMappingURL=index.css.map */
