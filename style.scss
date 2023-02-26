@@ -20,6 +20,20 @@ $box-shadow:0.5rem 1rem rgba(0,0,0,.7);
     grid-template-columns: repeat(auto-fit, minmax($val, 1fr ));
     gap: 1.5rem;
 }
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    @media (max-width: 576px) {
+        font-size: 25px;
+    }
+    span {
+        text-transform: uppercase;
+        color: $crimson;
+    }
+}
 
 
 html{
@@ -78,6 +92,7 @@ body{
 @import"./sass/nav-bar.scss";
 @import"./sass/home-section.scss";
 @import"./sass/about-section.scss";
+@import"./sass/blog-section.scss";
 @import"./sass/portfolio-section.scss";
 
 

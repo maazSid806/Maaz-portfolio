@@ -1,0 +1,89 @@
+.blog-section {
+    padding: 5rem 9%;
+    .box-container {
+        @include grid(31rem);
+        .box {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            background: $light-bg;
+            box-shadow: $box-shadow;
+
+            &:hover .image-wrapper img {
+                transform: scale(1.2);
+            }
+            .image-wrapper {
+                height: 25rem;
+                width: 100%;
+                border-radius: 0.5rem;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 0.2s linear;
+                }
+            }
+            .content {
+                .icons {
+
+                    button {
+                        position: relative;
+                        top: -1rem;
+                        border-radius: 0.5rem;
+                        padding: 8px 10px;
+                        display: inline-block;
+                        background: $black;
+                        border: none;
+                        color: $white;
+                        font-size: 10px;
+                        &:hover{
+                            color:crimson;
+                        }
+                        i{
+                            color: $crimson;
+                            padding-right: .5rem;
+                        }
+                    }
+                    a {
+                        font-size: 10px;
+                    }
+                }
+                h3{
+                    font-size: 2rem;
+                    color: $white;
+                }
+                P{
+                    font-size: 1.5rem;
+                    color: $light-color;
+                    padding: 1rem 0;
+                    line-height: 2;
+                }
+                .btn {
+                    margin-top: 8px;
+                    display: inline-block;
+                    padding: 4px 10px;
+                    border-radius: 7rem;
+                    background: $crimson;
+                    color: $white;
+                    font-size: 1.3rem;
+
+                    i {
+                        height: 3.5rem;
+                        width: 3.5rem;
+                        line-height: 4rem;
+                        font-size: 1.3rem;
+                        text-align: center;
+                        background: $white;
+                        color: $crimson;
+                        border-radius: 50%;
+                        transition: 0.2s linear;
+                        &:hover {
+                            margin-left: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
